@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
 async function verifyToken(token) {
   try {
-    const response = await fetch('http://localhost:5000/api/verify-auth', {
+    const response = await fetch('https://jpl-login.onrender.com/api/verify-auth', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`
@@ -116,8 +116,6 @@ function initApp(userResponse) {
     });
   }
 
-  // Rest of your existing app code...
 }
 
-// Make sure to include this script in your index.html
-// <script src="auth.js"></script>
+

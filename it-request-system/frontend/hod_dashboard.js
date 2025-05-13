@@ -1,6 +1,5 @@
-const BASE_URL = "http://localhost:5000";
-// const BASE_URL = "https://jindal-power.onrender.com";
-//const BASE_URL = "https://jpl-z0s7.onrender.com";
+// const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://jpl-login.onrender.com";
 
 // Global variables
 let commentModalInstance = null;

@@ -508,7 +508,8 @@ function handleFilter(e) {
 
 // Logout functionality
 function logout() {
-  localStorage.removeItem("isLoggedIn");
+  localStorage.removeItem("isHRLoggedIn");
+  localStorage.removeItem("requests");
   window.location.href = "hr_login.html";
 }
 

@@ -84,7 +84,8 @@ const sendApprovalMail = async (requestData, approvalLevel) => {
             Employee: ${requestData.name} (${requestData.employeeCode})<br>
             Department: ${requestData.department}<br>
             Requested Item: ${requestData.item}<br>
-            Reason: ${requestData.reason || 'Not specified'}
+            Reason: ${requestData.reason || 'Not specified'}<br>
+            Comment: ${requestData.comments[approvalLevel.toLowerCase()] || 'Not specified'}
           </p>
           <p style="font-size: 15px; color: #444; line-height: 1.6; margin-top: 25px;">
             Your request is moving forward in the approval process.
